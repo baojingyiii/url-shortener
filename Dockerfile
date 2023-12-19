@@ -2,6 +2,8 @@ FROM golang:1.20
 
 WORKDIR /app
 
+COPY . .
+
 ENV GOPROXY=https://goproxy.cn
 
 RUN go mod download
